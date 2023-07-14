@@ -63,10 +63,12 @@ class Window(QWidget):
             career = career.get_data_frames()
             print(career)
             
-            #Below are instructions to display stats in excel
-            #Create an empty excel sheet in project folder
-            #run program, and open the excel file
-            #close excel sheet before running again
+            '''Below are instructions to display stats in excel
+            -We have created an empty excel sheet in project folder
+            -called 'player.xlsx'
+            -run program, and open the excel file
+            -close excel sheet before running again'''
+            
             book = load_workbook('player.xlsx')
             writer = pd.ExcelWriter('player.xlsx', engine='openpyxl')
             
